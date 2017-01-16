@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Medicines</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="margin-top:50px;">
+    <div>
+      <img src="img/ct-006.jpg">
+    </div>
+</ion-content>
+
+<ion-content padding>
+  &nbsp;
+
+  <ion-fab top right edge>
+    <button ion-fab mini color="blue" (click)="addMedicine()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+
+  <ion-list style="margin-top:40px">
+
+    <ion-item-sliding *ngFor="let medicine of medicines | async">
+      <ion-item>
+        <h2>{{medicine.name}}</h2>
+        <p>{{medicine.dosage}}</p>
+      </ion-item>
+      <ion-item-options class="bdr-no">
+        <button ion-button color="primary" icon-left (click)="editMedicine(medicine)">
+          <ion-icon name="create"></ion-icon>
+          Edit
+        </button>
+        <button ion-button color="red" icon-left (click)="deleteMedicine(medicine.$key)">
+          <ion-icon name="trash"></ion-icon>
+          Del
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+  </ion-list>
+
+</ion-content>

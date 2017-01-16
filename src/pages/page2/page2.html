@@ -1,0 +1,119 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Nutrition</ion-title>
+  </ion-navbar>
+
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="nutrimain">
+      <ion-segment-button value="nutrition">Nutrition</ion-segment-button>
+      <ion-segment-button value="enzymes">Enzymes</ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content padding>
+
+  <div [ngSwitch]="nutrimain">
+    <div *ngSwitchCase="'nutrition'">
+        <div>
+          <img src="img/ct-009.jpg">
+        </div>
+        
+        <h3>Getting your nutrition</h3>
+
+        <p>Nutritional needs for people with cystic fibrosis are determined by their degree of malabsorption, activity level and the severity of lung disease. Individuals with CF typically need 1 ½ to 2 times as many calories as people without CF.</p>
+
+        <p>Energy needs of people with CF are estimated to be 1 ½ to 2 times the needs of those without CF. A high-calorie, high-fat diet, with 40 percent of total calories from fat is generally recommended.</p>
+
+        <p>There is no one specific recommended method to determine energy needs. The goal is usually sustained weight gain and growth in children and teens, and weight gain or maintenance for adults.</p>
+
+        <h4>Your Body Mass Index</h4>
+        <p>Just how much should you weigh? That answer will vary, largely depending on your current weight, your height and the nutritional goals that you and your care team set for your health.</p>
+
+        <p>To track weight relative to height in individuals with CF, your care team uses different measurements:</p>
+
+        <ul>
+          <li>Weight-for-length for children under age 2</li>
+          <li>Body Mass Index (BMI) percentiles for those ages 2 to 20 (because height fluctuates so much)</li>
+          <li>A numerical BMI for people over age 20</li>
+        </ul>
+
+        <p>BMI is calculated by dividing your body weight in kilograms (kg) by your height in meters squared (m2).</p>
+
+        <h4>Fitting in the Calories: Your Diet</h4>
+
+        <div><img src="img/ct-005.jpg"></div>
+        <p>People with CF typically need up to twice the amount of daily calories as others who are of similar age and weight. To gain weight, you will need to take in about an extra 500 calories a day.</p>
+
+        <p>Spend some time thinking about what your weight gain goal should be. Discuss what you want to accomplish with the dietitian on your CF care team. Together you can figure out how to best reach your BMI goal.</p>
+
+        <p>Your dietitian can offer some simple ways to add calories to the food you already eat. We're not talking about anything out of the ordinary.</p>
+
+        <p>You can get those extra 500 calories from foods like these:</p>
+
+        <ul>
+          <li>A grilled chicken and cheese sandwich with avocado</li>
+          <li>A bowl of spaghetti with sauce, extra cheese and olive oil</li>
+          <li>A peanut butter and jelly sandwich and a glass of whole milk</li>
+          <li>Two large handfuls of nuts or trail mix</li>
+          <li>A protein bar and a nutritional supplement beverage such as Ensure or Boost</li>
+          <li>A grilled chicken Caesar wrap</li>
+        </ul>
+
+        <p>Remember, these extra calories should be part of a well-balanced diet. A 2012 study showed an overdependence on saturated fat intake in individuals with CF and a low polyunsaturated fat intake.2 As individuals with CF live longer, this imbalance increases the risk of heart disease. Make sure to incorporate unsaturated fats from foods such as avocados, nuts and oils. Walnut and flaxseed oils are good choices because they contain fats that reduce inflammation.</p>
+
+        <h3>Nutritional Supplement</h3>
+        <p>High-calorie supplements can be used to boost calories, but they shouldn't be used to replace meals. Instead, nutritional supplements should be taken along with a meal or as a substitute for a lower-calorie snack.</p>
+
+        <p>Nutritional supplements come in a variety of forms. You can get flavored powders that you can mix with milk, ready-made milk-based shakes, and high-calorie and high-protein juices. You also can get individual fat, carbohydrate or protein powders that you can mix into drinks. Talk to your CF dietitian about the right choice for you.</p>
+        
+
+    </div>
+
+    <div *ngSwitchCase="'enzymes'">
+      <h2>Enzymes</h2>
+      <strong style="color:#0077b3;">Just as the lungs produce thick, sticky mucus, the pancreas also makes thick mucus that blocks the release of enzymes needed for digestion. Most people with cystic fibrosis need to take enzymes before they eat.</strong>
+
+      <div style="margin-top:20px;"><img src="img/ct-008.jpg"></div>
+
+      <p>Taken by mouth, the enzymes go to work in the intestines so you can digest food and absorb the nutrients to keep your body healthy. It is important that you take the right amount of enzymes, so check with your doctor, nurse or dietitian on your CF care team for the exact amount of enzymes to take.</p>
+
+      <h4>What Are Enzymes and How Do They Work?</h4>
+      <p>Most pancreatic enzyme supplements come in capsule form. Inside each capsule are many small beads that contain the digestive enzymes. Each bead is covered with a special enteric coating. This coating allows the beads to dissolve in the small intestine. The digestive enzymes are then released in the small intestine to help digest food. Enzymes work for about 45 to 60 minutes after taking them.</p>
+
+      <p>Enzymes work by helping you to:</p>
+
+        <ul>
+          <li>Digest carbohydrates, proteins and fats (the three nutrients in food that supply calories)</li>
+          <li>Gain and maintain a healthy weight</li>
+          <li>Absorb essential nutrients such as vitamins and minerals</li>
+        </ul>
+
+      <p>In the short term, not taking your enzymes or not taking the proper dose can lead to poorly digested fat, protein or starch. The poorly digested food sits in your intestines, which causes gas, pain and unpleasant smells. It can also cause problems ranging from constipation and DIOS to loose, floating, greasy, frequent stools.</p>
+
+      <h4>How to Take Enzymes</h4>
+
+      <div><img src="img/ct-010.jpg"></div>
+
+      <P>Most people with CF need to take pancreatic enzyme capsules before every meal and snack so their bodies can digest the nutrients. Meals and snacks include breast milk, formula, milk and nutritional supplements. People with CF should take enzymes with any food, unless it is pure sugar (such as a clear Popsicle, hard candy or fruit juice).</P>
+
+      <p>Older children and adults should take the capsules with liquid and swallow them whole. If you or your child are not able to swallow the capsules, open them and sprinkle the beads on a small amount of an acidic food, such as applesauce, that you can swallow. Don't crush or chew the enzyme beads. They won't work as well.</p>
+
+      <p>As you get older or start to eat more, you will have to increase the amount of enzymes. If you have any questions about how many enzymes to take, talk to the dietitian, doctor or nurse on your care team. Taking too many enzyme supplements can actually damage your intestines, but taking too few can keep you from absorbing the nutrients you need. </p>
+
+      <h4>Storing Your Enzymes</h4>
+      <p>Get your enzymes ready once a week rather than as needed. This is also a great way to monitor whether you've taken them and if you need a refill soon.</p>
+
+      <p>If necessary, use three or more pill cases (morning, afternoon, evening) and keep them where you will remember to take your meds -- for example, on the bedside table for morning and on the kitchen counter for evening.</p>
+
+
+
+    </div>
+
+    </div>
+</ion-content>
+

@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Doctors</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="margin-top:50px;">
+    <div>
+      <img src="img/ct-007.jpg">
+    </div>
+</ion-content>
+
+
+<ion-content padding>
+  &nbsp;
+
+  <ion-fab top right edge>
+    <button ion-fab mini color="blue" (click)="addDoctor()"><ion-icon name="add"></ion-icon></button>
+  </ion-fab>
+
+  <ion-list style="margin-top:110px;">
+
+    <ion-item-sliding *ngFor="let doctor of doctors | async">
+      <ion-item>
+        <h2>{{doctor.name}}</h2>
+        <p>{{doctor.clinic}}</p>
+        <p>Tel : {{doctor.telephone}}</p>
+      </ion-item>
+      <ion-item-options class="bdr-no">
+        <button ion-button color="primary" icon-left (click)="editDoctor(doctor)">
+          <ion-icon name="create"></ion-icon>
+          Edit
+        </button>
+        <button ion-button color="red" icon-left (click)="deleteDoctor(doctor.$key)">
+          <ion-icon name="trash"></ion-icon>
+          Del
+        </button>
+      </ion-item-options>
+    </ion-item-sliding>
+
+  </ion-list>
+
+</ion-content>

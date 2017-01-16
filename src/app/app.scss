@@ -1,0 +1,104 @@
+.ios, .md {
+
+    $primary: #00a3cc;
+    $SIDEMENU_TOP: #00a3cc;
+    $SIDEMENU_BOTTOM: #99ccff;
+    $SIDEMENU_TRANSPARENCY: rgba(255,255,255,0.4);
+
+
+    .bg-menu {
+        background: -webkit-linear-gradient(left top, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+        background: -o-linear-gradient(bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+        background: -moz-linear-gradient(bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+        background: linear-gradient(to bottom right, $SIDEMENU_TOP, $SIDEMENU_BOTTOM);
+
+        border:0px;
+
+    }
+
+    .img-menu {
+        display:block;
+        width:100%;
+        margin-left:auto;
+        margin-right:auto;     
+    }
+
+    .icn-menu {
+        display:block;
+        float:left;
+        max-width:40px;
+        padding:0;
+        margin:0;
+        font-size:32px;
+    }
+    
+    .icn-span {
+        display:block;
+        font-size:1.3em;
+        float:left;
+        margin-top:6px;
+        margin-left:15px;
+    }
+
+    .bt-menu {
+        background:none;
+        margin:0;
+        color: white;
+        font-weight: 100;
+        border: 0px !important;
+        width:100%;
+        border-bottom: 0.5px solid #ccc;
+		&.activated {
+			background: $SIDEMENU_TRANSPARENCY;
+		}
+        &.active-page-highlight {
+            .item-content {
+                background: $SIDEMENU_TRANSPARENCY;
+            }		
+	    }
+		
+    }
+
+    // general
+    p, li {line-height:1.5em;}
+    .sml-fnt {font-size:1.6rem;}
+
+    //margin spec
+    .mgn-tp-sm {margin-top:10px;}
+    .mgn-tp-md {margin-top:20px;}
+    .mgn-tp-lg {margin-top:30px;}
+
+    //border spec
+    .bdr-bt {border-bottom:1px solid #dedede;}
+    .bdr-no {border:0px;}
+
+    //segment button
+    .segment-md {border-top:1px solid #ccc;}
+    .segment-button {font-size:1.5rem;color:#FFF;border:0;line-height:4.8rem;}
+    .segment-button.segement-activated {border-bottom-color:#FFF;}
+
+    //Alert Box
+    .alert-wrapper {min-width:300px;margin-top:50px;}
+
+    // Toolbar
+    .toolbar-background-md {background:#00a3cc;}
+    .toolbar-title-md {color:#FFF; font-weight:300; font-size:2.5rem; font-stretch: extra-expanded;}
+    .bar-button-default-md {color:#FFF;}
+
+    //main content
+    .content-md {max-width:750px;}
+
+    //List
+    .sm-lnht {margin:0;}
+
+
+
+
+    
+
+
+    
+
+
+
+}
